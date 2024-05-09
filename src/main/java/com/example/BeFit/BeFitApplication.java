@@ -8,6 +8,6 @@ public class BeFitApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BeFitApplication.class, args);
-		//asdasdas
+		//asdasdasvcbcvbc
 	}
 }
