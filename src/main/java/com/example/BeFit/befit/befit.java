@@ -1,6 +1,21 @@
-package com.befit;
+package com.example.BeFit.befit;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table
 public class befit {
+    @Id
+    @SequenceGenerator(
+            name="befit_sequence",
+            sequenceName = "befit_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy=GenerationType.SEQUENCE,
+            generator = "befit_sequence"
+    )
+
     private Long id;
     private String name;
     private String składniki;
@@ -21,6 +36,11 @@ public class befit {
         this.składniki = składniki;
         this.opis_przyg = opis_przyg;
     }
+
+    public befit() {
+        
+    }
+
 
     public Long getId() {
         return id;
