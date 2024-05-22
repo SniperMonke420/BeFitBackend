@@ -1,0 +1,38 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- Tworzenie tabeli Przepisy -->
+    <changeSet id="202406221729_przepisy_init" author="Budzin">
+        <createTable tableName="przepis">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nazwa" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="przygotowanie" type="text">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="przepis_skladniki">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="skladnik" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="przepis_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="przepis_skladniki"
+                                 baseColumnNames="przepis_id"
+                                 referencedTableName="przepis"
+                                 referencedColumnNames="id" constraintName="przepis_skladniki"/>
+    </changeSet>
+</databaseChangeLog>

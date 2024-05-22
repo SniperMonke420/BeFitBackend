@@ -1,53 +1,28 @@
 package com.example.BeFit.befit.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
-import java.util.ArrayList;
 import java.util.List;
 
+@Getter
+@Setter
 @Entity
 public class Przepis {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(length = 1500)
+
+    @Column(name = "nazwa", nullable = false)
     private String nazwa;
-    @ElementCollection
-    private List<String> skladniki;
-    @Column(length = 1500)
+
+    @Column(name = "przygotowanie", columnDefinition = "TEXT")
     private String przygotowanie;
 
-    // Gettery i settery
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getNazwa() {
-        return nazwa;
-    }
-
-    public void setNazwa(String nazwa) {
-        this.nazwa = nazwa;
-    }
-
-    public List<String> getSkladniki() {
-        return skladniki;
-    }
-
-    public void setSkladniki(List<String> skladniki) {
-        this.skladniki = skladniki;
-    }
-
-    public String getPrzygotowanie() {
-        return przygotowanie;
-    }
-
-    public void setPrzygotowanie(String przygotowanie) {
-        this.przygotowanie = przygotowanie;
-    }
+    @JsonManagedReference
+    @OneToMany(mappedBy = "przepis", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    private List<PrzepisSkladniki> skladniki;
 }

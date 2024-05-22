@@ -1,0 +1,369 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="202405221737_insert_przepisy" author="Budzin">
+        <insert tableName="przepis">
+            <column name="id" value="1"/>
+            <column name="nazwa" value="Sałatka z soczewicy z jogurtem"/>
+            <column name="przygotowanie" value="Marchewkę pokrój w pół plastry. Następnie ugotuj soczewicę wraz z marchewką w lekko osolonej wodzie. Gotuj ok. 15 minut, aż warzywa będą miękkie. Po ugotowaniu odcedź i odstaw do ostygnięcia. Bakłażana pokrój w plastry, skrop oliwą i dopraw solą. Następnie zgrilluj. W dużej misce wymieszaj soczewicę z marchewką, pomidorami pokrojonymi w kostkę i bakłażanem. Dodaj posiekaną miętę i listki natki pietruszki. Sos sałatkowy Knorr wymieszaj z jogurtem i sokiem z cytryny. Sałatkę przełóż na talerz i polej ją sosem. Udekoruj ziołami, miętą i natką pietruszki."/>
+        </insert>
+
+        <insert tableName="przepis">
+            <column name="id" value="2"/>
+            <column name="nazwa" value="Zdrowa szarlotka"/>
+            <column name="przygotowanie" value="Połącz wszystkie składniki na ciasto i wylej masę do formy wyłożonej papierem do pieczenia (o średnicy ok. 22 cm). Ciasto piecz przez 15 minut w 180 stopniach C, a następnie ostudź. W międzyczasie wymieszaj żelatynę w proszku z gorącą wodą w misce i odstaw na chwilę. Następnie dodaj mus jabłkowy i opcjonalnie także cynamon lub mak. Jabłka obierz i pokrój w cienkie plasterki. Połóż plastry na ostudzonym cieście. Na koniec polej jabłka przygotowanym musem jabłkowym i odstaw ciasto do lodówki na co najmniej 3 godziny. Gotowe ciasto (zanim zastygnie) można posypać makiem i podawać np. polane jogurtem."/>
+        </insert>
+
+        <insert tableName="przepis">
+            <column name="id" value="3"/>
+            <column name="nazwa" value="Dietetyczny kremowy makaron z cukinią"/>
+            <column name="przygotowanie" value="Ugotuj makaron w osolonej, wrzącej wodzie do miękkości i odcedź. Wymieszaj niewielką ilość mleka z 2 łyżkami mąki. Podgrzej na małym ogniu pozostałe mleko w garnku, w którym ugotowałaś makaron. Dodaj masło, mleko wymieszane z mąką, zmiażdżone ząbki czosnku, sól, pieprz i gotuj na wolnym ogniu. Dodaj ser do sosu i pozwól mu się całkowicie roztopić, aby jeszcze bardziej zagęścić sos. Na koniec wmieszaj startą cukinię i ugotowany makaron, i wszystko dobrze wymieszaj. Można podawać razem z tuńczykiem."/>
+        </insert>
+
+        <insert tableName="przepis">
+            <column name="id" value="4"/>
+            <column name="nazwa" value="Kotlety z kaszy jaglanej z brokułami"/>
+            <column name="przygotowanie" value="Cebulę drobno posiekać i podsmażyć na maśle (najlepiej klarowanym). Kaszę jaglaną ugotować (2 szklanki wody, 1 szklanka kaszy), w czasie gotowania dodać cebulę oraz przyprawy. Po ugotowaniu kaszę ostudzić, następnie zemleć przez maszynkę. Zemleć również ugotowane na parze brokuły, drugą cebulę oraz dodać czosnek i olej. Wszystkie składniki dobrze wymieszać. Z masy uformować kotlety i usmażyć. W przypadku wykorzystania masy na pasztet należy dodać więcej oleju, 2 łyżki skrobi kukurydzianej i piec godzinę w temperaturze 160 stopni."/>
+        </insert>
+
+        <insert tableName="przepis">
+            <column name="id" value="5"/>
+            <column name="nazwa" value="Zdrowy krem z dyni"/>
+            <column name="przygotowanie" value="Drobno pokrojoną cebulę podsmaż w garnku na rozgrzanym oleju lub maśle klarowanym. Dodaj obraną i startą dynię, dolej 50 ml wody, posól, dopraw i gotuj około 15 minut, od czasu do czasu mieszając. Dynia powinna być miękka. Śmietankę wymieszaj z dynią i zagotuj. Zdejmij garnek z ognia. Danie możesz podawać od razu."/>
+        </insert>
+
+        <insert tableName="przepis">
+            <column name="id" value="6"/>
+            <column name="nazwa" value="Gofry owsiane"/>
+            <column name="przygotowanie" value="Wszystkie składniki odważamy w pojemniku miksującym i mieszamy ze sobą – wybieramy program gotowanie wg własnych ustawień / czas 40 sekund / obroty 8. Każdy gofr wypiekamy w rozgrzanej gofrownicy przez ok. 4 minuty. Podajemy je jeszcze ciepłe, np. z dodatkiem masła orzechowego, owoców i syropu klonowego."/>
+        </insert>
+
+        <insert tableName="przepis">
+            <column name="id" value="7"/>
+            <column name="nazwa" value="Zielony shot witaminowy"/>
+            <column name="przygotowanie" value="Cytrynę obieramy, a z jabłek usuwamy gniazda nasienne. Wszystkie składniki przekładamy do pojemnika miksującego i blendujemy, używając programy gotowanie wg własnych ustawień / czas 40 sekund / obroty 10. Gotowy napój przecedzamy przez sitko o drobnych oczkach i przelewamy do małych butelek idealnych na kilka łyków."/>
+        </insert>
+
+        <insert tableName="przepis">
+            <column name="id" value="8"/>
+            <column name="nazwa" value="Fit makaron à la Carbonara"/>
+            <column name="przygotowanie" value="Wędzoną pierś kurczaka kroimy w dość drobną kostkę. Na rozgrzaną patelnię dodajemy 2 łyżki oliwy i krótko podsmażamy na niej kurczaka. Cukinię kroimy w bardzo drobną kostkę i dodajemy ją do podsmażonego kurczaka. Całość smażymy jeszcze kilka minut. Ok. 2 łyżki podsmażonych składników odkładamy na później, aby ozdobić gotowe danie. Makaron gotujemy ok. 2 minuty krócej, niż wskazuje instrukcja na opakowaniu, aby był al dente. Po ugotowaniu odlewamy ok. 0,33 szklanki wody – będzie potrzebna do przygotowania sosu. Sery ścieramy na tarce o drobnych oczkach. W misce dokładnie mieszamy żółtka z czarnym pieprzem i serami. Do podsmażonego kurczaka i cukinii dodajemy makaron, połowę zostawionej wody z jego gotowania i całość dokładnie mieszamy. Następnie dodajemy żółtka z serem i drobno posiekaną pietruszkę i ponownie mieszamy. W razie potrzeby dolewamy więcej wody po gotowaniu makaronu, aby sos miał odpowiednią konsystencję. Makaron nakładamy na talerze, ozdabiamy z wierzchu odłożonym wcześniej podsmażonym kurczakiem z cukinią, a także odrobiną startego pecorino romano."/>
+        </insert>
+
+        <insert tableName="przepis">
+            <column name="id" value="9"/>
+            <column name="nazwa" value="Proteinowy deser z ciasteczkami Cantuccini"/>
+            <column name="przygotowanie" value="Ciastka cantuccini kroimy na mniejsze kawałki i połowę z nich wkładamy na dno pucharków. Do miski przekładamy serek wiejski wysokobiałkowy, skyr, syrop klonowy i masło orzechowe. Składniki blendujemy. Do pucharków przekładamy po ¼ masy serowej i po ½ musu owocowego. Na te składniki nakładamy pozostałe, jeszcze bardziej rozdrobnione ciasteczka. Na tę warstwę cantuccini nakładamy pozostałą masę serową. Kiwi obieramy i kroimy w drobną kostkę. Każdą porcję deseru ozdabiamy świeżymi owocami i listkami mięty."/>
+        </insert>
+
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="1"/>
+            <column name="skladnik" value="jogurt niskotłuszczowy: 80 mililitrów"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="1"/>
+            <column name="skladnik" value="Sos sałatkowy czosnkowy Knorr: 1 opakowanie"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="1"/>
+            <column name="skladnik" value="soczewica zielona: 150 gramów"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="1"/>
+            <column name="skladnik" value="świeża mięta: 0.5 pęczka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="1"/>
+            <column name="skladnik" value="cytryna: 1 sztuka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="1"/>
+            <column name="skladnik" value="dojrzały pomidor: 2 sztuki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="1"/>
+            <column name="skladnik" value="bakłażan: 1 sztuka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="1"/>
+            <column name="skladnik" value="marchew: 1 sztuka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="1"/>
+            <column name="skladnik" value="sól: do smaku"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="1"/>
+            <column name="skladnik" value="natka pietruszki: 0.5 pęczka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="1"/>
+            <column name="skladnik" value="oliwa do smażenia"/>
+        </insert>
+
+        <!-- Zdrowa szarlotka -->
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="2"/>
+            <column name="skladnik" value="drobna mąka orkiszowa: 70 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="2"/>
+            <column name="skladnik" value="mak: 2 łyżki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="2"/>
+            <column name="skladnik" value="dowolne mleko: 3 łyżki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="2"/>
+            <column name="skladnik" value="miód/syrop daktylowy: 2 łyżki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="2"/>
+            <column name="skladnik" value="mus jabłkowy (bez cukru): 500 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="2"/>
+            <column name="skladnik" value="jabłka: 1-2 sztuki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="2"/>
+            <column name="skladnik" value="100% żelatyna: 20 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="2"/>
+            <column name="skladnik" value="gorąca woda: 3 łyżki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="2"/>
+            <column name="skladnik" value="cynamon/mak (opcjonalnie)"/>
+        </insert>
+
+        <!-- Dietetyczny kremowy makaron z cukinią -->
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="3"/>
+            <column name="skladnik" value="makaron pełnoziarnisty: 400 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="3"/>
+            <column name="skladnik" value="starta cukinia: 500 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="3"/>
+            <column name="skladnik" value="starta mozzarella (lub inny ser): 100 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="3"/>
+            <column name="skladnik" value="dowolne mleko: 380 ml"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="3"/>
+            <column name="skladnik" value="masło: 1 łyżka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="3"/>
+            <column name="skladnik" value="dowolna mąka: 2 łyżki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="3"/>
+            <column name="skladnik" value="sól: do smaku"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="3"/>
+            <column name="skladnik" value="mielony pieprz czarny: do smaku"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="3"/>
+            <column name="skladnik" value="ząbki czosnku: 2 sztuki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="3"/>
+            <column name="skladnik" value="tuńczyk: 400 g"/>
+        </insert>
+
+        <!-- Kotlety z kaszy jaglanej z brokułami -->
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="4"/>
+            <column name="skladnik" value="kasza jaglana: 1 szklanka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="4"/>
+            <column name="skladnik" value="brokuł: 1 sztuka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="4"/>
+            <column name="skladnik" value="cebule: 2 sztuki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="4"/>
+            <column name="skladnik" value="czosnek: 3-4 ząbki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="4"/>
+            <column name="skladnik" value="olej: 2-3 łyżki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="4"/>
+            <column name="skladnik" value="przyprawy: czubryca, zielona pietruszka"/>
+        </insert>
+
+        <!-- Zdrowy krem z dyni -->
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="5"/>
+            <column name="skladnik" value="oczyszczona i starta dynia Hokkaido lub piżmowa: 1 kg"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="5"/>
+            <column name="skladnik" value="śmietanka (mleczna lub sojowa): 200 ml"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="5"/>
+            <column name="skladnik" value="duża cebula: 1 sztuka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="5"/>
+            <column name="skladnik" value="oliwa z oliwek: 1 łyżka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="5"/>
+            <column name="skladnik" value="sól: 1/2 łyżeczki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="5"/>
+            <column name="skladnik" value="mielony czarny pieprz: 1/2 łyżeczki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="5"/>
+            <column name="skladnik" value="dymka"/>
+        </insert>
+
+        <!-- Gofry owsiane -->
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="6"/>
+            <column name="skladnik" value="płatki owsiane górskie: 130 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="6"/>
+            <column name="skladnik" value="banan: 2 sztuki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="6"/>
+            <column name="skladnik" value="jajko: 2 sztuki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="6"/>
+            <column name="skladnik" value="waniliowy napój proteinowy: 160 ml"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="6"/>
+            <column name="skladnik" value="ekstrakt waniliowy: 1 łyżeczka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="6"/>
+            <column name="skladnik" value="proszek do pieczenia: 1 łyżeczka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="6"/>
+            <column name="skladnik" value="olej kokosowy: 1 łyżka"/>
+        </insert>
+
+        <!-- Zielony shot witaminowy -->
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="7"/>
+            <column name="skladnik" value="jabłko: 2 sztuki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="7"/>
+            <column name="skladnik" value="ogórek: 1 sztuka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="7"/>
+            <column name="skladnik" value="seler naciowy: 3 łodygi"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="7"/>
+            <column name="skladnik" value="cytryna: 1 sztuka"/>
+        </insert>
+
+        <!-- Fit makaron à la Carbonara -->
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="8"/>
+            <column name="skladnik" value="kurczak wędzona pierś: 50 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="8"/>
+            <column name="skladnik" value="oliwa z oliwek: 2 łyżki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="8"/>
+            <column name="skladnik" value="makaron spaghetti: 150 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="8"/>
+            <column name="skladnik" value="cukinia: 0.5 sztuki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="8"/>
+            <column name="skladnik" value="żółtka jaj: 2 sztuki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="8"/>
+            <column name="skladnik" value="ser pecorino: 20 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="8"/>
+            <column name="skladnik" value="grana padano: 20 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="8"/>
+            <column name="skladnik" value="natka pietruszki: 0,25 pęczka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="8"/>
+            <column name="skladnik" value="pieprz czarny: 0,25 łyżeczki"/>
+        </insert>
+
+        <!-- Proteinowy deser z ciasteczkami Cantuccini -->
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="9"/>
+            <column name="skladnik" value="Cantuccini: 100 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="9"/>
+            <column name="skladnik" value="serek wiejski wysokobiałkowy: 200 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="9"/>
+            <column name="skladnik" value="skyr naturalny: 200 g"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="9"/>
+            <column name="skladnik" value="syrop klonowy: 1 łyżka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="9"/>
+            <column name="skladnik" value="masło orzechowe: 1 łyżka"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="9"/>
+            <column name="skladnik" value="kiwi: 2 sztuki"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="9"/>
+            <column name="skladnik" value="mięta świeża: 4 liście"/>
+        </insert>
+        <insert tableName="przepis_skladniki">
+            <column name="przepis_id" value="9"/>
+            <column name="skladnik" value="mus mango-brzoskwinia: 200 g"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="202405221947_fix_sequence" author="Budzin">
+        <sql>
+            SELECT setval('przepis_id_seq', (SELECT MAX(id) FROM przepis));
+        </sql>
+    </changeSet>
+</databaseChangeLog>
