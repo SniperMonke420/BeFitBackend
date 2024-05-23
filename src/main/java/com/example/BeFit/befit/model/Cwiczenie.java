@@ -9,11 +9,20 @@ import lombok.Setter;
 @Entity
 @Table(name = "cwiczenie")
 public class Cwiczenie {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(length = 300)
     private String link;
+
     @Column(length = 300)
     private String kategoria;
+
+    @Column(name = "zdjecie_sciezka")
+    private String imagePath;
+
+    @Transient
+    private byte[] image;
 }

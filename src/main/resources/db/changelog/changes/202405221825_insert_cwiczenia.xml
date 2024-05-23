@@ -23,6 +23,22 @@
             <column name="link" value="https://www.youtube.com/watch?v=7vebcKvEfzc&amp;pp=ygUEam9nYQ%3D%3D"/>
         </insert>
         <insert tableName="cwiczenie">
+            <column name="kategoria" value="Cardio"/>
+            <column name="link" value="https://www.youtube.com/watch?v=fwTffUDL1lQ&amp;t=551s&amp;pp=ygURxId3aWN6ZW5pYSBjYXJkaW8%3D"/>
+        </insert>
+        <insert tableName="cwiczenie">
+            <column name="kategoria" value="Cardio"/>
+            <column name="link" value="https://www.youtube.com/watch?v=nrbgxHlX7Ho&amp;t=467s&amp;pp=ygURxId3aWN6ZW5pYSBjYXJkaW8%3D"/>
+        </insert>
+        <insert tableName="cwiczenie">
+            <column name="kategoria" value="Cardio"/>
+            <column name="link" value="https://www.youtube.com/watch?v=omS75UFWsdo&amp;pp=ygURxId3aWN6ZW5pYSBjYXJkaW8%3D"/>
+        </insert>
+        <insert tableName="cwiczenie">
+            <column name="kategoria" value="Cardio"/>
+            <column name="link" value="https://www.youtube.com/watch?v=kZDvg92tTMc&amp;pp=ygURxId3aWN6ZW5pYSBjYXJkaW8%3D"/>
+        </insert>
+        <insert tableName="cwiczenie">
             <column name="kategoria" value="Ćwiczenia taneczne"/>
             <column name="link" value="https://www.youtube.com/watch?v=BrW67hcIDTo&amp;pp=ygUTxId3aWN6ZW5pYSB0YW5lY3puZQ%3D%3D"/>
         </insert>

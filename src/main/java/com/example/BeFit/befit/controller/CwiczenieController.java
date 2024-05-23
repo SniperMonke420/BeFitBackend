@@ -5,7 +5,9 @@ import com.example.BeFit.befit.service.CwiczenieService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -26,8 +28,8 @@ public class CwiczenieController {
     }
 
     @PostMapping
-    public ResponseEntity<Cwiczenie> createCwiczenie(@RequestBody Cwiczenie cwiczenie) {
-        return cwiczenieService.createCwiczenie(cwiczenie);
+    public ResponseEntity<Cwiczenie> createCwiczenie(@RequestParam String cwiczenie, @RequestParam MultipartFile image) throws IOException {
+        return cwiczenieService.createCwiczenie(cwiczenie, image);
     }
 
     @DeleteMapping("/{id}")
@@ -36,7 +38,7 @@ public class CwiczenieController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Cwiczenie> updateCwiczenie(@PathVariable Long id, @RequestBody Cwiczenie updatedCwiczenie) {
-        return cwiczenieService.updateCwiczenie(id, updatedCwiczenie);
+    public ResponseEntity<Cwiczenie> updateCwiczenie(@PathVariable Long id, @RequestParam String cwiczenie, @RequestParam MultipartFile image) throws IOException {
+        return cwiczenieService.updateCwiczenie(id, cwiczenie, image);
     }
 }

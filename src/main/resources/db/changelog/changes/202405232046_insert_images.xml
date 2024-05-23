@@ -1,0 +1,137 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="202405221737_insert_przepisy_images" author="Budzin">
+        <update tableName="przepis">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/przepisy/Salatka.jpg"/>
+            <where>id = 1</where>
+        </update>
+
+        <update tableName="przepis">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/przepisy/Szarlotka.jpg"/>
+            <where>id = 2</where>
+        </update>
+
+        <update tableName="przepis">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/przepisy/Makaron cukinia.jpg"/>
+            <where>id = 3</where>
+        </update>
+
+        <update tableName="przepis">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/przepisy/Kotlecki.jpg"/>
+            <where>id = 4</where>
+        </update>
+
+        <update tableName="przepis">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/przepisy/Zupa dyniowa.jpg"/>
+            <where>id = 5</where>
+        </update>
+
+        <update tableName="przepis">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/przepisy/gofry.jpg"/>
+            <where>id = 6</where>
+        </update>
+
+        <update tableName="przepis">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/przepisy/szoty.jpg"/>
+            <where>id = 7</where>
+        </update>
+
+        <update tableName="przepis">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/przepisy/carbonara.jpg"/>
+            <where>id = 8</where>
+        </update>
+
+        <update tableName="przepis">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/przepisy/Deser.jpg"/>
+            <where>id = 9</where>
+        </update>
+    </changeSet>
+
+    <changeSet id="202405222046_update_cwiczenia_images" author="Budzin">
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/joga 1.jpg"/>
+            <where>id = 1</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/joga 2.jpg"/>
+            <where>id = 2</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/joga 3.jpg"/>
+            <where>id = 3</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/joga 4.jpg"/>
+            <where>id = 4</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/cardio 1.jpg"/>
+            <where>id = 5</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/cardio 2.jpg"/>
+            <where>id = 6</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/cardio 3.jpg"/>
+            <where>id = 7</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/cardio 4.jpg"/>
+            <where>id = 8</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/taniec 1.jpg"/>
+            <where>id = 9</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/taniec 2.jpg"/>
+            <where>id = 10</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/taniec 3.jpg"/>
+            <where>id = 11</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/taniec 4.jpg"/>
+            <where>id = 12</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/brzuch 1.jpg"/>
+            <where>id = 13</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/brzuch 2.jpg"/>
+            <where>id = 14</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/brzuch 3.jpg"/>
+            <where>id = 15</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/brzuch 4.jpg"/>
+            <where>id = 16</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/nogi 1.jpg"/>
+            <where>id = 17</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/nogi 2.jpg"/>
+            <where>id = 18</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/nogi 3.jpg"/>
+            <where>id = 19</where>
+        </update>
+        <update tableName="cwiczenie">
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/cwiczenia/nogi 4.jpg"/>
+            <where>id = 20</where>
+        </update>
+    </changeSet>
+
+</databaseChangeLog>

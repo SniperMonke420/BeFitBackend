@@ -25,4 +25,10 @@ public class Przepis {
     @JsonManagedReference
     @OneToMany(mappedBy = "przepis", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<PrzepisSkladniki> skladniki;
+
+    @Column(name = "zdjecie_sciezka")
+    private String imagePath;
+
+    @Transient
+    private byte[] image;
 }
