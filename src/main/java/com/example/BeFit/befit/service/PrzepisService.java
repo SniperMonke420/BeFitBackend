@@ -30,14 +30,19 @@ public class PrzepisService {
         if (przepisy.isEmpty()) {
             return ResponseEntity.notFound().build();
         }
+        przepisy.forEach(fileService::loadPrzepisImage);
         return ResponseEntity.ok(przepisy);
     }
 
     @Transactional(readOnly = true)
     public ResponseEntity<Przepis> getPrzepisById(Long id) {
-        return przepisRepository.findById(id)
-                .map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
+        Przepis przepis = przepisRepository.findById(id)
+                .orElse(null);
+        if(przepis == null){
+            return ResponseEntity.notFound().build();
+        }
+        fileService.loadPrzepisImage(przepis);
+        return ResponseEntity.ok(przepis);
     }
 
     @Transactional

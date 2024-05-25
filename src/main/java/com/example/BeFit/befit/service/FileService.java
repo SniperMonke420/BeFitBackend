@@ -21,9 +21,9 @@ public class FileService {
 
     public void loadPrzepisImage(Przepis przepis) {
         try {
-            if (przepis.getImage() != null) {
-                Path posterPath = Paths.get(przepis.getImagePath());
-                przepis.setImage(Files.readAllBytes(posterPath));
+            if (przepis.getImagePath() != null) {
+                Path przepisPath = Paths.get(przepis.getImagePath());
+                przepis.setImage(Files.readAllBytes(przepisPath));
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -32,9 +32,9 @@ public class FileService {
 
     public void loadCwiczeniaImage(Cwiczenie cwiczenie) {
         try {
-            if (cwiczenie.getImage() != null) {
-                Path posterPath = Paths.get(cwiczenie.getImagePath());
-                cwiczenie.setImage(Files.readAllBytes(posterPath));
+            if (cwiczenie.getImagePath() != null) {
+                Path cwiczeniaPath = Paths.get(cwiczenie.getImagePath());
+                cwiczenie.setImage(Files.readAllBytes(cwiczeniaPath));
             }
         } catch (IOException e) {
             e.printStackTrace();

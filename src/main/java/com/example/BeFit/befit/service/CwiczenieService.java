@@ -26,14 +26,19 @@ public class CwiczenieService {
         if(cwiczenia.isEmpty()){
             return ResponseEntity.notFound().build();
         }
+        cwiczenia.forEach(fileService::loadCwiczeniaImage);
         return ResponseEntity.ok(cwiczenia);
     }
 
     @Transactional(readOnly = true)
     public ResponseEntity<Cwiczenie> findCwiczenieById(Long id){
-        return cwiczenieRepository.findById(id)
-                .map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
+        Cwiczenie cwiczenie = cwiczenieRepository.findById(id)
+                .orElse(null);
+        if(cwiczenie == null){
+            return ResponseEntity.notFound().build();
+        }
+        fileService.loadCwiczeniaImage(cwiczenie);
+        return ResponseEntity.ok(cwiczenie);
     }
 
     @Transactional
