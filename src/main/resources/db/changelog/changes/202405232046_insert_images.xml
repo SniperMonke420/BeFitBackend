@@ -21,7 +21,7 @@
         </update>
 
         <update tableName="przepis">
-            <column name="zdjecie_sciezka" value="src/main/resources/Images/przepisy/Kotlecki.jpg"/>
+            <column name="zdjecie_sciezka" value="src/main/resources/Images/przepisy/Kotleciki.jpg"/>
             <where>id = 4</where>
         </update>
 
