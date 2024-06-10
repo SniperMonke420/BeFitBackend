@@ -23,6 +23,9 @@ public class Cwiczenie {
     @Column(name = "zdjecie_sciezka")
     private String imagePath;
 
+    @Column(length = 300)
+    private String title;
+
     @Transient
     private byte[] image;
 }
