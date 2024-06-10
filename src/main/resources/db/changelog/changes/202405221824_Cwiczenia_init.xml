@@ -16,6 +16,9 @@
             <column name="link" type="varchar(300)">
                 <constraints nullable="false"/>
             </column>
+            <column name="title" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
         </createTable>
     </changeSet>
 </databaseChangeLog>

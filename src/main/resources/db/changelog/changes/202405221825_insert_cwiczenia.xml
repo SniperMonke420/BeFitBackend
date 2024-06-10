@@ -2,89 +2,109 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <!-- Wstawianie danych do tabeli Cwiczenie -->
-    <changeSet id="202405221825_insert_cwiczenia" author="Budzin">
+    <changeSet id="202406101201_update_insert_cwiczenia" author="Budzin">
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Joga"/>
             <column name="link" value="https://www.youtube.com/watch?v=Eml2xnoLpYE&amp;pp=ygUEam9nYQ%3D%3D"/>
+            <column name="title" value="Full Body Yoga for Strength &amp; Flexibility | 25 Minute At Home Mobility Routine"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Joga"/>
             <column name="link" value="https://www.youtube.com/watch?v=IYSkQLXbtHE&amp;pp=ygUEam9nYQ%3D%3D"/>
+            <column name="title" value="30 Min FAT BURNING YOGA | Lean Muscles | Feel Strong + Balanced | No Jumping, No Repeat"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Joga"/>
             <column name="link" value="https://www.youtube.com/watch?v=Uk2TRawRlBk&amp;pp=ygUEam9nYQ%3D%3D"/>
+            <column name="title" value="Poranna Joga na Dzień Dobry!"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Joga"/>
             <column name="link" value="https://www.youtube.com/watch?v=7vebcKvEfzc&amp;pp=ygUEam9nYQ%3D%3D"/>
+            <column name="title" value="Rozciągająca joga na koniec dnia | 20 min | ●○○○"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Cardio"/>
             <column name="link" value="https://www.youtube.com/watch?v=fwTffUDL1lQ&amp;t=551s&amp;pp=ygURxId3aWN6ZW5pYSBjYXJkaW8%3D"/>
+            <column name="title" value="Odchudzający Trening CARDIO dla początkujących bez maty proste ćwiczenia"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Cardio"/>
             <column name="link" value="https://www.youtube.com/watch?v=nrbgxHlX7Ho&amp;t=467s&amp;pp=ygURxId3aWN6ZW5pYSBjYXJkaW8%3D"/>
+            <column name="title" value="CICHE CARDIO NA STOJĄCO / BEZ MATY / ODCHUDZAJĄCY TRENING DLA KAŻDEGO"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Cardio"/>
             <column name="link" value="https://www.youtube.com/watch?v=omS75UFWsdo&amp;pp=ygURxId3aWN6ZW5pYSBjYXJkaW8%3D"/>
+            <column name="title" value="Szybkie CARDIO 13 minut / Wyzwanie 10 dniowe / Monika Kołakowska"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Cardio"/>
             <column name="link" value="https://www.youtube.com/watch?v=kZDvg92tTMc&amp;pp=ygURxId3aWN6ZW5pYSBjYXJkaW8%3D"/>
+            <column name="title" value="30 MIN PUMPING CARDIO WORKOUT | Full Body - No Equipment at Home"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Ćwiczenia taneczne"/>
             <column name="link" value="https://www.youtube.com/watch?v=BrW67hcIDTo&amp;pp=ygUTxId3aWN6ZW5pYSB0YW5lY3puZQ%3D%3D"/>
+            <column name="title" value="DANCE CARDIO 🔥 | 30 MINUT | TRENING DO MUZYKI | SPALAJ KALORIE TAŃCZĄC!"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Ćwiczenia taneczne"/>
             <column name="link" value="https://www.youtube.com/watch?v=O0S0P3AZuug&amp;pp=ygUTxId3aWN6ZW5pYSB0YW5lY3puZQ%3D%3D"/>
+            <column name="title" value="HERO - KIZO ft Bletka | Taneczny trening DANCE CARDIO"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Ćwiczenia taneczne"/>
             <column name="link" value="https://www.youtube.com/watch?v=KMfNj55Mhl8&amp;pp=ygUTxId3aWN6ZW5pYSB0YW5lY3puZQ%3D%3D"/>
+            <column name="title" value="TANECZNE CARDIO | Latino Dance"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Ćwiczenia taneczne"/>
             <column name="link" value="https://www.youtube.com/watch?v=yqZq20iLkug&amp;pp=ygUTxId3aWN6ZW5pYSB0YW5lY3puZQ%3D%3D"/>
+            <column name="title" value="DANCE CARDIO | TANIEC I SPALANIE KALORII"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Ćwiczenia na brzuch"/>
             <column name="link" value="https://www.youtube.com/watch?v=9ujGl__yKJM&amp;pp=ygUUxId3aWN6ZW5pYSBuYSBicnp1Y2g%3D"/>
+            <column name="title" value="Trening na płaski brzuch 10 MIN / Monika Kołakowska"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Ćwiczenia na brzuch"/>
             <column name="link" value="https://www.youtube.com/watch?v=Pd7QHgBtu-8&amp;pp=ygUUxId3aWN6ZW5pYSBuYSBicnp1Y2g%3D"/>
+            <column name="title" value="Trening BRZUCHA 15 min / Monika Kołakowska"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Ćwiczenia na brzuch"/>
             <column name="link" value="https://www.youtube.com/watch?v=SLMoA59fgcs&amp;pp=ygUUxId3aWN6ZW5pYSBuYSBicnp1Y2g%3D"/>
+            <column name="title" value="10 MINUTOWY PROSTY I PRZYJEMNY TRENING BRZUCHA"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Ćwiczenia na brzuch"/>
             <column name="link" value="https://www.youtube.com/watch?v=LSpADIqUCFE&amp;pp=ygUUxId3aWN6ZW5pYSBuYSBicnp1Y2g%3D"/>
+            <column name="title" value="Super BRZUCH 13 minut / Wyzwanie 10-dniowe / Monika Kołakowska"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Ćwiczenia na pośladki i nogi"/>
             <column name="link" value="https://www.youtube.com/watch?v=J_V-ajB-zlQ&amp;pp=ygUPxId3aWN6ZW5pYSBuw7Nn"/>
+            <column name="title" value="UDA I POŚLADKI 20 MIN 🍑 Trening modelujący nogi"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Ćwiczenia na pośladki i nogi"/>
             <column name="link" value="https://www.youtube.com/watch?v=8KwOnmPMYh0&amp;pp=ygUPxId3aWN6ZW5pYSBuw7Nn"/>
+            <column name="title" value="TRENING NA UDA I POŚLADKI 15 MIN / DOMOWY TRENING/ BEZ SPRZĘTU"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Ćwiczenia na pośladki i nogi"/>
             <column name="link" value="https://www.youtube.com/watch?v=4Sh_p1FZRF8&amp;pp=ygUPxId3aWN6ZW5pYSBuw7Nn"/>
+            <column name="title" value="SZCZUPŁE UDA - TRENING NA POŚLADKI I WEWNĘTRZNĄ CZĘŚĆ UD"/>
         </insert>
         <insert tableName="cwiczenie">
             <column name="kategoria" value="Ćwiczenia na pośladki i nogi"/>
             <column name="link" value="https://www.youtube.com/watch?v=ZqK77tBWXEU&amp;pp=ygUPxId3aWN6ZW5pYSBuw7Nn"/>
+            <column name="title" value="JAK SCHUDNĄĆ Z UD W 21 DNI?/ 15 MINUTOWY TRENING NA SMUKŁE UDA!"/>
         </insert>
     </changeSet>
 </databaseChangeLog>
